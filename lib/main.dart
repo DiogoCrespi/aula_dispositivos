@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized(); // Garante que o binding do Flutter está inicializado
   runApp(const MyApp());
 }
 
@@ -86,12 +88,12 @@ class _MyHomePageState extends State<MyHomePage> {
   IconData _getThemeIcon(BuildContext context) {
     if (widget.themeMode == ThemeMode.system) {
       return MediaQuery.platformBrightnessOf(context) == Brightness.dark
-          ? Icons.brightness_auto
-          : Icons.brightness_auto;
+          ? MdiIcons.brightnessAuto
+          : MdiIcons.brightnessAuto;
     }
     return widget.themeMode == ThemeMode.dark
-        ? Icons.light_mode
-        : Icons.dark_mode;
+        ? MdiIcons.weatherSunny
+        : MdiIcons.weatherNight;
   }
 
   String _getThemeTooltip(BuildContext context) {
@@ -111,13 +113,13 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: const Text('Flutter Demo App'),
         actions: [
-          IconButton(icon: const Icon(Icons.search), onPressed: () {}),
+          IconButton(icon: Icon(MdiIcons.magnify), onPressed: () {}),
           IconButton(
             icon: Icon(_getThemeIcon(context)),
             onPressed: widget.onThemeToggle,
             tooltip: _getThemeTooltip(context),
           ),
-          IconButton(icon: const Icon(Icons.more_vert), onPressed: () {}),
+          IconButton(icon: Icon(MdiIcons.dotsVertical), onPressed: () {}),
         ],
       ),
       drawer: Drawer(
@@ -127,15 +129,15 @@ class _MyHomePageState extends State<MyHomePage> {
             UserAccountsDrawerHeader(
               accountName: const Text('John Doe'),
               accountEmail: const Text('john.doe@example.com'),
-              currentAccountPicture: const CircleAvatar(
-                child: Icon(Icons.person),
+              currentAccountPicture: CircleAvatar(
+                child: Icon(MdiIcons.account),
               ),
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.primary,
               ),
             ),
             ListTile(
-              leading: const Icon(Icons.home),
+              leading: Icon(MdiIcons.home),
               title: const Text('Home'),
               selected: _selectedIndex == 0,
               onTap: () {
@@ -144,7 +146,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             ListTile(
-              leading: const Icon(Icons.business),
+              leading: Icon(MdiIcons.briefcase),
               title: const Text('Business'),
               selected: _selectedIndex == 1,
               onTap: () {
@@ -153,7 +155,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             ListTile(
-              leading: const Icon(Icons.school),
+              leading: Icon(MdiIcons.school),
               title: const Text('School'),
               selected: _selectedIndex == 2,
               onTap: () {
@@ -163,7 +165,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             const Divider(),
             ListTile(
-              leading: const Icon(Icons.settings),
+              leading: Icon(MdiIcons.cog),
               title: const Text('Settings'),
               onTap: () {
                 Navigator.pop(context);
@@ -197,16 +199,16 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        child: Icon(MdiIcons.plus),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(MdiIcons.home), label: 'Home'),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
+            icon: Icon(MdiIcons.briefcase),
             label: 'Business',
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.school), label: 'School'),
+          BottomNavigationBarItem(icon: Icon(MdiIcons.school), label: 'School'),
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Theme.of(context).colorScheme.primary,
