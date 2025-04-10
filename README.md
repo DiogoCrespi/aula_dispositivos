@@ -1,19 +1,16 @@
-# Meu Aplicativo Flutter
+# Receitas Deliciosas
 
 ## Descrição
-Este é um aplicativo Flutter que demonstra os conceitos básicos de desenvolvimento de aplicativos móveis, incluindo estrutura de tela, personalização visual e utilização de recursos externos.
+Este é um aplicativo Flutter que apresenta uma coleção de receitas deliciosas. O aplicativo demonstra conceitos avançados de desenvolvimento Flutter, incluindo cards expansíveis, carregamento de imagens e uma interface moderna e intuitiva.
 
 ## Funcionalidades Implementadas
-- Estrutura de tela baseada em Scaffold
-- Barra superior personalizada (AppBar)
-- Menu lateral (Drawer)
-- Botão flutuante de ação (FloatingActionButton)
-- Navegação inferior (BottomNavigationBar)
-- Suporte a temas claro e escuro
-- Contador de cliques
-- Interface em português
-- Exibição de imagens usando Image.asset
-- Aplicação de fontes personalizadas aos textos usando TextStyle
+- Lista de receitas com cards expansíveis
+- Imagens de alta qualidade para cada receita
+- Descrição resumida com opção de expandir para ver a receita completa
+- Interface moderna com Material Design 3
+- Suporte a fontes personalizadas
+- Gradiente para indicar conteúdo expandível
+- Botões interativos para expandir/recolher conteúdo
 
 ## Como Executar
 1. Certifique-se de ter o Flutter instalado em seu ambiente
@@ -29,7 +26,7 @@ Este é um aplicativo Flutter que demonstra os conceitos básicos de desenvolvim
 
 ## Estrutura do Projeto
 - `lib/main.dart`: Arquivo principal do aplicativo
-- `assets/`: Diretório para recursos (imagens e fontes)
+- `assets/`: Diretório para recursos
   - `assets/images/`: Diretório para imagens
   - `assets/fonts/`: Diretório para fontes
 - `pubspec.yaml`: Configurações do projeto e dependências
@@ -37,10 +34,18 @@ Este é um aplicativo Flutter que demonstra os conceitos básicos de desenvolvim
 ## Tecnologias Utilizadas
 - Flutter
 - Dart
+- Google Fonts
 - Material Design Icons
+- Cached Network Image
+
+## Dependências Principais
+- google_fonts: ^6.1.0
+- material_design_icons_flutter: ^7.0.7296
+- cached_network_image: ^3.3.1
 
 ## Histórico de Desenvolvimento
 - Implementação inicial da estrutura básica do aplicativo
-- Adição de funcionalidades de navegação e tema
-- Implementação de exibição de imagens e fontes personalizadas
+- Adição de cards expansíveis para receitas
+- Implementação de carregamento de imagens
+- Adição de gradiente para conteúdo expandível
 - Documentação completa do projeto
