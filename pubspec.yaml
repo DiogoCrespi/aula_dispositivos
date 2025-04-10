@@ -1,5 +1,5 @@
 name: aula_dispositivos
-description: "A new Flutter project."
+description: "Aplicativo de receitas simples e deliciosas."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -35,6 +35,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   material_design_icons_flutter: ^7.0.7296
+  flutter_svg: ^2.0.9
+  google_fonts: ^6.1.0
+  cached_network_image: ^3.3.1
 
 dev_dependencies:
   flutter_test:
@@ -90,12 +93,13 @@ flutter:
   # see https://flutter.dev/to/font-from-package
 
   assets:
-    - ./assets/images/
-    - ./assets/fonts/
+    - assets/images/
+    - assets/fonts/
 
-  # fonts:
-  #   - family: Roboto
-  #     fonts:
-  #       - asset: assets/fonts/Roboto-Regular.ttf
-  #       - asset: assets/fonts/Roboto-Bold.ttf
-  #         weight: 700
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700

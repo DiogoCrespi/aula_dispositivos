@@ -1,0 +1,2 @@
+Este é um arquivo de placeholder para simular uma imagem.
+Em um projeto real, você substituiria este arquivo por uma imagem real. 

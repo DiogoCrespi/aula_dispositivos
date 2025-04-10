@@ -1,70 +1,51 @@
-# Flutter Demo App
+# Receitas Deliciosas
 
-A Flutter application that demonstrates the use of various widgets and features including:
-- Scaffold with AppBar
-- Drawer navigation
-- BottomNavigationBar
-- FloatingActionButton
-- Theme customization
-- Asset management
+## Descrição
+Este é um aplicativo Flutter que apresenta uma coleção de receitas deliciosas. O aplicativo demonstra conceitos avançados de desenvolvimento Flutter, incluindo cards expansíveis, carregamento de imagens e uma interface moderna e intuitiva.
 
-## Features
+## Funcionalidades Implementadas
+- Lista de receitas com cards expansíveis
+- Imagens de alta qualidade para cada receita
+- Descrição resumida com opção de expandir para ver a receita completa
+- Interface moderna com Material Design 3
+- Suporte a fontes personalizadas
+- Gradiente para indicar conteúdo expandível
+- Botões interativos para expandir/recolher conteúdo
 
-- Modern Material Design 3 UI
-- Custom theme with ThemeData
-- Responsive layout
-- Navigation drawer with user account header
-- Bottom navigation bar with multiple sections
-- Counter functionality with FloatingActionButton
-- Custom fonts support
-- Asset management for images and fonts
+## Como Executar
+1. Certifique-se de ter o Flutter instalado em seu ambiente
+2. Clone este repositório
+3. Execute `flutter pub get` para instalar as dependências
+4. Execute `flutter run` para iniciar o aplicativo
 
-## Getting Started
+## Requisitos
+- Flutter SDK
+- Dart SDK
+- Editor de código (VS Code ou Android Studio)
+- Git
 
-### Prerequisites
+## Estrutura do Projeto
+- `lib/main.dart`: Arquivo principal do aplicativo
+- `assets/`: Diretório para recursos
+  - `assets/images/`: Diretório para imagens
+  - `assets/fonts/`: Diretório para fontes
+- `pubspec.yaml`: Configurações do projeto e dependências
 
-- Flutter SDK (latest version)
-- Android Studio or VS Code with Flutter extensions
-- An emulator or physical device for testing
+## Tecnologias Utilizadas
+- Flutter
+- Dart
+- Google Fonts
+- Material Design Icons
+- Cached Network Image
 
-### Installation
+## Dependências Principais
+- google_fonts: ^6.1.0
+- material_design_icons_flutter: ^7.0.7296
+- cached_network_image: ^3.3.1
 
-1. Clone the repository
-2. Run `flutter pub get` to install dependencies
-3. Run `flutter run` to start the application
-
-### Project Structure
-
-```
-lib/
-  ├── main.dart              # Main application file
-assets/
-  ├── images/               # Image assets
-  └── fonts/               # Font assets
-```
-
-## Running the App
-
-1. Ensure you have Flutter installed and set up
-2. Connect a device or start an emulator
-3. Run the following commands:
-   ```bash
-   flutter pub get
-   flutter run
-   ```
-
-## Features in Detail
-
-- **Theme**: Custom theme using ThemeData with Material 3 design
-- **Navigation**: 
-  - Drawer menu with user account
-  - Bottom navigation bar with 3 sections
-- **UI Components**:
-  - AppBar with actions
-  - FloatingActionButton for counter
-  - Responsive layout
-  - Custom fonts support
-
-## Contributing
-
-Feel free to submit issues and enhancement requests.
+## Histórico de Desenvolvimento
+- Implementação inicial da estrutura básica do aplicativo
+- Adição de cards expansíveis para receitas
+- Implementação de carregamento de imagens
+- Adição de gradiente para conteúdo expandível
+- Documentação completa do projeto

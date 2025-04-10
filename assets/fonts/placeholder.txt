@@ -1,0 +1,2 @@
+Este é um arquivo de placeholder para simular uma fonte.
+Em um projeto real, você substituiria este arquivo por arquivos de fonte reais (TTF, OTF, etc.). 
