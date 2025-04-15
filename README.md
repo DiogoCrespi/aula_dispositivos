@@ -10,7 +10,7 @@ A Flutter application that demonstrates the use of various widgets and features 
 
 ## Features
 
-- Modern Material Design 3 UI
+- Modern Material Design 3 UI 
 - Custom theme with ThemeData
 - Responsive layout
 - Navigation drawer with user account header
