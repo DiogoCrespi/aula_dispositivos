@@ -1,70 +1,76 @@
-# Flutter Demo App
+# Lista Expansível com Animações Implícitas
 
-A Flutter application that demonstrates the use of various widgets and features including:
-- Scaffold with AppBar
-- Drawer navigation
-- BottomNavigationBar
-- FloatingActionButton
-- Theme customization
-- Asset management
+Este projeto demonstra a implementação de uma lista de itens expansíveis utilizando animações implícitas no Flutter.
 
-## Features
+## 🚀 Funcionalidades
 
-- Modern Material Design 3 UI 
-- Custom theme with ThemeData
-- Responsive layout
-- Navigation drawer with user account header
-- Bottom navigation bar with multiple sections
-- Counter functionality with FloatingActionButton
-- Custom fonts support
-- Asset management for images and fonts
+- Lista de produtos com animação de expansão suave
+- Interface moderna e responsiva
+- Animações implícitas usando `AnimatedContainer` e `AnimatedCrossFade`
+- Interação com feedback visual
+- Design Material 3
 
-## Getting Started
+## 📋 Pré-requisitos
 
-### Prerequisites
+- Flutter SDK (versão 3.7.2 ou superior)
+- Dart SDK (versão 3.7.2 ou superior)
+- Android Studio ou VS Code com extensões Flutter e Dart
 
-- Flutter SDK (latest version)
-- Android Studio or VS Code with Flutter extensions
-- An emulator or physical device for testing
+## 🔧 Instalação
 
-### Installation
+1. Clone o repositório:
+```bash
+git clone [URL_DO_REPOSITÓRIO]
+```
 
-1. Clone the repository
-2. Run `flutter pub get` to install dependencies
-3. Run `flutter run` to start the application
+2. Navegue até o diretório do projeto:
+```bash
+cd aula_dispositivos
+```
 
-### Project Structure
+3. Instale as dependências:
+```bash
+flutter pub get
+```
+
+4. Execute o aplicativo:
+```bash
+flutter run
+```
+
+## 📦 Dependências
+
+- flutter: ^3.7.2
+- cached_network_image: ^3.2.3
+- lottie: ^2.6.0
+- google_fonts: ^6.1.0
+
+## 🎨 Estrutura do Projeto
 
 ```
 lib/
-  ├── main.dart              # Main application file
+├── main.dart
+├── widgets/
+│   └── expandable_item.dart
+├── screens/
+│   └── home_screen.dart
+├── animations/
+│   └── pulse_animation.dart
 assets/
-  ├── images/               # Image assets
-  └── fonts/               # Font assets
+├── images/
+│   ├── produto1.png
+│   ├── produto2.png
+│   └── produto3.png
 ```
 
-## Running the App
+## 📱 Capturas de Tela
 
-1. Ensure you have Flutter installed and set up
-2. Connect a device or start an emulator
-3. Run the following commands:
-   ```bash
-   flutter pub get
-   flutter run
-   ```
+[Adicione capturas de tela ou gifs das animações aqui]
 
-## Features in Detail
+## 🤝 Contribuição
 
-- **Theme**: Custom theme using ThemeData with Material 3 design
-- **Navigation**: 
-  - Drawer menu with user account
-  - Bottom navigation bar with 3 sections
-- **UI Components**:
-  - AppBar with actions
-  - FloatingActionButton for counter
-  - Responsive layout
-  - Custom fonts support
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
-## Contributing
+## 📄 Licença
 
-Feel free to submit issues and enhancement requests.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
