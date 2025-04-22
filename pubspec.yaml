@@ -1,5 +1,5 @@
 name: aula_dispositivos
-description: "A new Flutter project."
+description: "Aplicativo Flutter com animações implícitas e lista expansível."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -35,6 +35,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   material_design_icons_flutter: ^7.0.7296
+  cached_network_image: ^3.2.3
+  lottie: ^2.6.0
+  google_fonts: ^6.1.0
+  provider: ^6.1.1
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
   flutter_test:
@@ -90,9 +95,9 @@ flutter:
   # see https://flutter.dev/to/font-from-package
 
   assets:
-    - ./assets/images/
-    - ./assets/fonts/
+    - assets/images/
 
+  # Removendo as fontes personalizadas e usando google_fonts
   # fonts:
   #   - family: Roboto
   #     fonts:

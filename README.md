@@ -1,70 +1,94 @@
-# Flutter Demo App
+# Lista Expansível com Animações em Flutter
 
-A Flutter application that demonstrates the use of various widgets and features including:
-- Scaffold with AppBar
-- Drawer navigation
-- BottomNavigationBar
-- FloatingActionButton
-- Theme customization
-- Asset management
+Este projeto implementa uma lista interativa com animações implícitas em Flutter, demonstrando boas práticas de desenvolvimento e animações suaves para uma experiência de usuário moderna.
 
-## Features
+## 🎯 Objetivo
 
-- Modern Material Design 3 UI 
-- Custom theme with ThemeData
-- Responsive layout
-- Navigation drawer with user account header
-- Bottom navigation bar with multiple sections
-- Counter functionality with FloatingActionButton
-- Custom fonts support
-- Asset management for images and fonts
+O aplicativo apresenta uma lista de produtos com cards expansíveis que utilizam animações implícitas do Flutter para criar transições suaves. Cada item da lista pode ser expandido/recolhido com uma animação fluida, revelando detalhes adicionais como descrição e opções de compra.
 
-## Getting Started
+### Características Principais:
+- Animações implícitas suaves usando `AnimatedContainer`
+- Tema dinâmico (claro/escuro) com persistência
+- Cache de imagens para melhor performance
+- Interface responsiva e moderna
+- Gerenciamento de estado com Provider
 
-### Prerequisites
+## 🚀 Instalação
 
-- Flutter SDK (latest version)
-- Android Studio or VS Code with Flutter extensions
-- An emulator or physical device for testing
+1. **Pré-requisitos**
+   - Flutter SDK (versão ^3.7.2)
+   - Dart SDK (última versão estável)
+   - Um editor de código (VS Code, Android Studio, etc.)
 
-### Installation
+2. **Clone o repositório**
+   ```bash
+   git clone [url-do-repositorio]
+   cd aula_dispositivos
+   ```
 
-1. Clone the repository
-2. Run `flutter pub get` to install dependencies
-3. Run `flutter run` to start the application
-
-### Project Structure
-
-```
-lib/
-  ├── main.dart              # Main application file
-assets/
-  ├── images/               # Image assets
-  └── fonts/               # Font assets
-```
-
-## Running the App
-
-1. Ensure you have Flutter installed and set up
-2. Connect a device or start an emulator
-3. Run the following commands:
+3. **Instale as dependências**
    ```bash
    flutter pub get
+   ```
+
+4. **Execute o aplicativo**
+   ```bash
    flutter run
    ```
 
-## Features in Detail
+## 📱 Como Usar
 
-- **Theme**: Custom theme using ThemeData with Material 3 design
-- **Navigation**: 
-  - Drawer menu with user account
-  - Bottom navigation bar with 3 sections
-- **UI Components**:
-  - AppBar with actions
-  - FloatingActionButton for counter
-  - Responsive layout
-  - Custom fonts support
+1. **Lista de Produtos**
+   - Toque em qualquer item da lista para expandir/recolher
+   - A animação suave revela detalhes adicionais do produto
+   - O botão "Adicionar ao Carrinho" fica disponível quando expandido
 
-## Contributing
+2. **Tema**
+   - Toque no ícone de tema no AppBar para alternar entre modo claro/escuro
+   - A preferência de tema é salva automaticamente
 
-Feel free to submit issues and enhancement requests.
+3. **Carrinho**
+   - Os produtos selecionados são adicionados ao carrinho
+   - O contador no AppBar mostra a quantidade de itens
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Flutter**: Framework UI
+- **Provider**: Gerenciamento de Estado
+- **cached_network_image**: Cache de imagens
+- **shared_preferences**: Persistência de dados
+- **google_fonts**: Fontes personalizadas
+- **lottie**: Animações complexas
+
+## 📂 Estrutura do Projeto
+
+```
+lib/
+├── animations/
+│   └── pulse_animation.dart
+├── models/
+│   └── product.dart
+├── providers/
+│   └── cart_provider.dart
+├── screens/
+│   └── home_screen.dart
+├── theme/
+│   └── app_theme.dart
+├── widgets/
+│   ├── expandable_item.dart
+│   ├── cart_item.dart
+│   └── loading_widget.dart
+└── main.dart
+```
+
+## 🎨 Screenshots
+
+[Adicionar screenshots do aplicativo aqui]
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Por favor, leia as [diretrizes de contribuição](CONTRIBUTING.md) antes de enviar um pull request.
